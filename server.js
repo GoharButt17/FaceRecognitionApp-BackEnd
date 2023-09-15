@@ -3,13 +3,13 @@ const bodyParser = require('body-parser');
 const bcrypt = require('bcrypt-nodejs');
 const cors = require('cors');
 const knex = require('knex')({
-    client: 'pg',
-    connection: {
-        host : '127.0.0.1',
-        user : 'postgres',
-        password : '2001Gohar0817',
-        database : 'smart-brain'
-    }
+  client: 'pg',
+  connection: {
+    host: 'rain.db.elephantsql.com', // Hostname provided by ElephantSQL
+    user: 'wxowdgjy', // Username provided by ElephantSQL
+    password: 'V0cvM15dAK0n_0nFU7TYYtI2R4cWZOHp', // Password provided by ElephantSQL
+    database: 'wxowdgjy', // Database name provided by ElephantSQL
+  }
 });
 
 const app = express();
